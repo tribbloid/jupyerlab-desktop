@@ -102,3 +102,14 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+
+# IntelliJ-IDEA specific
+*.iml
+.idea/
+.idea_modules/
+
+# vscode
+.vscode/
+
+**/checkpoints

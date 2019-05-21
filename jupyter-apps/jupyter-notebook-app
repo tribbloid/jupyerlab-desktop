@@ -1,0 +1,9 @@
+
+CRDIR="$(cd "`dirname "$0"`"; pwd)"
+
+jupyter notebook \
+--NotebookApp.shutdown_no_activity_timeout=5 \
+--browser="epiphany %s --application-mode --profile=${CRDIR}/app-epiphany-jupyterlab" \
+--KernelManager.shutdown_wait_time=5 \
+--MappingKernelManager.cull_idle_timeout=5 \
+--MappingKernelManager.cull_interval=5

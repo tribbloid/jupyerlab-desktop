@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=JupyterLab (epiphany)
+Exec=epiphany --application-mode --profile="./app-epiphany-jupyterlab" http://localhost:8888/lab?
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=Network;GNOME;GTK;
+Icon=./app-icon.png
+StartupWMClass=epiphany-jupyterlab
+Name[en_CA]=epiphany-jupyterlab.desktop
