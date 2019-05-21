@@ -3,7 +3,7 @@ CRDIR="$(cd "`dirname "$0"`"; pwd)"
 
 jupyter lab \
 --LabApp.shutdown_no_activity_timeout=5 \
---browser="epiphany %s --application-mode --profile=${CRDIR}/app-epiphany-jupyterlab" \
+--browser="chromium-browser --app=%s" \
 --KernelManager.shutdown_wait_time=5 \
 --MappingKernelManager.cull_idle_timeout=5 \
 --MappingKernelManager.cull_interval=5

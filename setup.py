@@ -1,0 +1,30 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='jupyterlab-desktop',
+    version='0.1.0',
+    author='Peng Cheng',
+    author_email='pc175@uow.edu.au',
+    description='... in an app-mode browser',
+    url='https://github.com/mwouts/jupytext',
+    packages=find_packages(exclude=['tests']),
+    scripts=['jupyter-apps/jupyterlab-app', 'jupyter-apps/jupyternotebook-app'],
+    # entry_points={'console_scripts': ['jupyter-desktop=jupyterlab-desktop:main']},
+    tests_require=['pytest'],
+    install_requires=['jupyterlab >= 0.35.0'],
+    license='Apache 2.0',
+    classifiers=['Development Status :: 5 - Production/Stable',
+                 'License :: OSI Approved :: Apache 2.0 License',
+                 'Environment :: Console',
+                 'Framework :: Jupyter',
+                 'Intended Audience :: Developers',
+                 'Intended Audience :: Science/Research',
+                 'Topic :: Text Processing :: Markup',
+                 'Programming Language :: Python',
+                 'Programming Language :: Python :: 2.7',
+                 'Programming Language :: Python :: 3',
+                 'Programming Language :: Python :: 3.4',
+                 'Programming Language :: Python :: 3.5',
+                 'Programming Language :: Python :: 3.6',
+                 'Programming Language :: Python :: 3.7']
+)

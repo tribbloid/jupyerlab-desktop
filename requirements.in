@@ -1,3 +1,3 @@
 # just for convenience
 
-jupyterlab
+jupyterlab >= 0.35.0
