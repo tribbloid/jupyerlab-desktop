@@ -1,9 +1,10 @@
 
 CRDIR="$(cd "`dirname "$0"`"; pwd)"
 
+PYTHONPATH="${PWD}:${PWD}/python:${PYTHONPATH}" \
 jupyter lab \
 --LabApp.shutdown_no_activity_timeout=5 \
 --browser="chromium-browser --app=%s" \
 --KernelManager.shutdown_wait_time=5 \
---MappingKernelManager.cull_idle_timeout=5 \
---MappingKernelManager.cull_interval=5
+--MappingKernelManager.cull_idle_timeout=1800 \
+--MappingKernelManager.cull_interval=60
